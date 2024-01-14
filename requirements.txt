@@ -1,0 +1,17 @@
+pytest==7.4.3
+pylint
+numpy
+black
+pytest-cov
+pandas
+scikit-learn
+click
+joblib
+MarkupSafe
+requests
+tensorflow
+fastapi
+uvicorn
+awscli
+dvc
+dvc_s3

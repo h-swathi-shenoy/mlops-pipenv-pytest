@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "==7.4.3"
+pylint = "*"
+numpy = "*"
+black = "*"
+pytest-cov = "*"
+pandas = "*"
+scikit-learn = "*"
+click = "*"
+joblib = "*"
+markupsafe = "*"
+requests = "*"
+tensorflow = "*"
+fastapi = "*"
+uvicorn = "*"
+awscli = "*"
+dvc = "*"
+dvc-s3 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
