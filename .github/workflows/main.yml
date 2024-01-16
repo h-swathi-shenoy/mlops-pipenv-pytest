@@ -12,9 +12,12 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+      -name: Ensure Pip
         run: |
-          make install
+          make ensure-pip
+      - name: Setup Environment
+        run: |
+          make setup-env
       - name: Lint with pylint
         run: |
           make lint
