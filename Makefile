@@ -1,6 +1,6 @@
 ensure-pip:
 	pip install --upgrade pip
-	pip install --upgrade pipenv 
+	pip install pipenv 
 	pip --version
 	pipenv --version
 
