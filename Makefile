@@ -5,7 +5,7 @@ ensure-pip:
 	pipenv --version
 
 setup-env: mk-venv
-	pipenv install -r requirements.txt
+	pipenv install --system --deploy --ignore-pipfile
 
 mk-venv:
 	rm -rf .venv
