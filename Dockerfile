@@ -1,4 +1,4 @@
-FROM python:3.9.16-slim-buster
+FROM python:3.9.16-slim-buster as base
 RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
