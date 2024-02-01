@@ -13,6 +13,4 @@ tensorflow
 fastapi
 uvicorn
 awscli
-dvc
 dvc_s3
-tensorflow

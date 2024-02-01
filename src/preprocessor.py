@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.base import BaseEstimator, TransformerMixin
 import tensorflow as tf
 
-root_dir = Path.cwd()
+root_dir = Path.cwd().parent
 data_dir = root_dir.joinpath("data")
 model_dir = root_dir.joinpath("artifacts")
 data = pd.read_csv(data_dir.joinpath("laptopPrice.csv"))

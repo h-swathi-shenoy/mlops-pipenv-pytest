@@ -11,7 +11,8 @@ ENV REPO_URL=pipenv_docker
 WORKDIR $REPO_URL
 
 COPY . .
-RUN pipenv install --system --deploy --ignore-pipfile
+RUN pip install -r requirements.txt
 
 EXPOSE 8080
-CMD ["uvicorn", "fastapi:app", "--host", "0.0.0.0", "--port", "8080"]
+ENTRYPOINT [ "python" ]
+CMD [ "main.py" ]
